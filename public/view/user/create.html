@@ -1,0 +1,77 @@
+@load('/public/view/public/head.html')
+
+	
+	<div class="page-container">
+	   @load('/public/view/public/menu.html')	
+		
+		
+		<div class="main-content">
+					
+			@load('/public/view/public/nav.html')			
+			<!--./nav-->
+
+			<div class="page-title">
+				<div class="title-env">
+					<h1 class="title"><?php echo $name;?></h1>
+					<p class="description"><?php echo $description;?></p>
+				</div>
+			</div>
+
+
+			<div class="row">
+				<div class="col-sm-12">
+					
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">以下是必填项</h3>
+						</div>
+
+						<div class="panel-body">
+							
+							<form role="form" class="form-horizontal">
+								
+								<div class="form-group">
+									<label class="col-sm-2 control-label" for="field-1">邮箱</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control" id="field-1" placeholder="xx@163.com">
+									</div>
+								</div>
+								
+								<div class="form-group-separator"></div>
+								
+								<div class="form-group">
+									<label class="col-sm-2 control-label" for="field-2">请输入密码</label>
+									
+									<div class="col-sm-10">
+										<input type="password" class="form-control" id="field-2" placeholder="请输入密码">
+									</div>
+								</div>
+								
+								<div class="form-group-separator"></div>
+								
+								<div class="form-group">
+									<label class="col-sm-2 control-label">请确认输入密码</label>
+									<div class="col-sm-10">
+										<input type="password" class="form-control" placeholder="请确认输入密码">
+									</div>
+								</div>
+								
+								<button class="btn btn-danger btn-block">确认创建帐号</button>
+								<a href="#" class="btn btn-info btn-block">返回</a>
+								
+							</form>
+							
+						</div>
+					</div>
+					
+				</div>
+			</div>
+
+
+		 @load('/public/view/public/footer.html')	
+		</div>
+		
+		@load('/public/view/public/chat.html')	
+		<!--./page-container-->
+	</div>	
+@load('/public/view/public/foot.html')

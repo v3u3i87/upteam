@@ -1,0 +1,14 @@
+{
+  "require": {
+    "filp/whoops": "*"
+  },
+
+   "autoload": {
+    "classmap": [
+      "vendor/upadd"
+    ]
+  }
+
+}
+
+

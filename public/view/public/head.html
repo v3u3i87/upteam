@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8" />
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />	
+	<title><?php echo $name;  echo ' - '.conf('conf@by');?></title>
+	<?php 
+		resou_css('fonts/linecons/css/linecons.css');
+		resou_css('fonts/fontawesome/css/font-awesome.min.css');
+		resou_css('bootstrap.css');
+		resou_css('xenon-core.css');
+		resou_css('xenon-forms.css');
+		resou_css('xenon-components.css');
+		resou_css('xenon-skins.css');
+		resou_css('custom.css');
+		resou_js('jquery-1.11.1.min.js');
+	?>
+	
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<?php
+			resou_js('html5shiv.min.js');
+			resou_js('respond.min.js');
+		?>
+	<![endif]-->
+	
+</head>
+<body class="page-body">
